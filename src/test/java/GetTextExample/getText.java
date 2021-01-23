@@ -1,4 +1,5 @@
 package GetTextExample;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,7 +29,7 @@ public class getText
     public void getTextboxInfo()
     {
         WebElement sampleMessage = driver.findElement(By.name("textbox_message"));
-        sampleMessage.sendKeys("TEST TEXT");
+        sampleMessage.sendKeys("TEST");
 
         String textValue = sampleMessage.getAttribute("value");
         System.out.println("Website Text: " + textValue);
