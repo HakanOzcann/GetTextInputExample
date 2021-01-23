@@ -29,7 +29,7 @@ public class getText
     public void getTextboxInfo()
     {
         WebElement sampleMessage = driver.findElement(By.name("textbox_message"));
-        sampleMessage.sendKeys("TEST");
+        sampleMessage.sendKeys(" TEST ");
 
         String textValue = sampleMessage.getAttribute("value");
         System.out.println("Website Text: " + textValue);
